@@ -23,7 +23,6 @@ class ViewController: UIViewController, UIScrollViewDelegate, NSURLConnectionDel
     //
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         // Create Image: works
         let image = UIImage(named: "kitten1.png")!
         imageView = UIImageView(image: image)
@@ -34,37 +33,22 @@ class ViewController: UIViewController, UIScrollViewDelegate, NSURLConnectionDel
         //scrollView.contentSize = image.size
     }
     
+    func getData() {
+        let url = NSURL(string: "https://52.35.14.9")
+        let requestGet = NSMutableURLRequest(URL: url!)
+        var response: NSURLResponse?
     
+        requestGet.HTTPMethod = "GET"
+        requestGet.addValue("application/json", forHTTPHeaderField: "Accept")
     
-    
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        startConnection()
+        NSURLConnection.sendAsynchronousRequest
+        (requestGet, queue: NSOperationQueue.mainQueue())
+            {(response, data, error) in print(NSString(data: data!, encoding: NSUTF8StringEncoding))
     }
     
-    func startConnection(){
-        let urlPath: String = "http://binaenaleyh.net/dusor/"
-        var url: NSURL = NSURL(string: urlPath)
-        var request: NSURLRequest = NSURLRequest(URL: url)
-        var connection: NSURLConnection = NSURLConnection(request: request, delegate: self, startImmediately: false)
-        connection.start()
-    }
     
-    func connection(connection: NSURLConnection!, didReceiveData data: NSData!){
-        self.data.appendData(data)
-    }
-    
-    func buttonAction(sender: UIButton!){
-        startConnection()
-    }
-    
-    func connectionDidFinishLoading(connection: NSURLConnection!) {
-        var err: NSError
-        // throwing an error on the line below (can't figure out where the error message is)
-        var jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as NSDictionary
-        println(jsonResult)
-    }
+
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
