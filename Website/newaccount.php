@@ -93,9 +93,9 @@
   <label class="col-md-4 control-label" for="textinput3">Veterinary Hours</label>  
   <div class="col-md-4">
    Open:
-  <input id="textinput3" name="textinput3" type="number" min="12" max="11" placeholder="am" class="form-control input-md" required="">
+  <input id="textinput3" name="textinput3" type="number" min="1" max="12" placeholder="am" class="form-control input-md" required="">
   Close:
-  <input id="textinput33" name="textinput33" type="number" min="12" max="11" placeholder="pm" class="form-control input-md" required="">
+  <input id="textinput33" name="textinput33" type="number" min="1" max="12" placeholder="pm" class="form-control input-md" required="">
   </div>
 </div>
 
