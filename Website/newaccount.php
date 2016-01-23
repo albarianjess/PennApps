@@ -42,10 +42,10 @@
 <h2 style="color: #fff; padding: 50px;">Create an account</h2>
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinputID">Bracelet ID #</label>  
+  <label class="col-md-4 control-label" for="textinputID">Username</label>  
   <div class="col-md-4">
-  <input id="textinputID" name="textinputID" type="text" placeholder="Bracelet ID #" class="form-control input-md" required="">
-  <span class="help-block">What is this?</span>  
+  <input id="textinputID" name="textinputID" type="text" placeholder="Enter a Username" class="form-control input-md" required="">
+  <!-- <span class="help-block">What is this?</span>   -->
   </div>
 </div>
 
@@ -69,24 +69,69 @@
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">First Name</label>  
+  <label class="col-md-4 control-label" for="textinput">Shelter Name</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="Enter your first name" class="form-control input-md" required="">
+  <input id="textinput" name="textinput" type="text" placeholder="Enter your Facilitie's Name" class="form-control input-md" required="">
     
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput2">Last Name</label>  
+  <label class="col-md-4 control-label" for="textinput2">Shelter Hours</label>  
   <div class="col-md-4">
-  <input id="textinput2" name="textinput2" type="text" placeholder="Enter your last name" class="form-control input-md" required="">
+  Open:
+  <input id="textinput2" name="textinput2" type="number" min="12" max="11" placeholder="am" class="form-control input-md" required="">
+  Close:
+  <input id="textinput2" name="textinput22" type="number" min="12" max="11" placeholder="pm" class="form-control input-md" required="">
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput3">Veterinary Hours</label>  
+  <div class="col-md-4">
+   Open:
+  <input id="textinput3" name="textinput3" type="number" min="12" max="11" placeholder="am" class="form-control input-md" required="">
+  Close:
+  <input id="textinput33" name="textinput33" type="number" min="12" max="11" placeholder="pm" class="form-control input-md" required="">
+  </div>
+</div>
+
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput4">Address</label>  
+  <div class="col-md-4">
+  <input id="textinput2" name="textinput4" type="text" placeholder="Enter your address" class="form-control input-md" required="">
     
   </div>
 </div>
 
-<!-- Multiple Radios -->
+<!-- Text input-->
 <div class="form-group">
+  <label class="col-md-4 control-label" for="textinput5">Phone Number</label>  
+  <div class="col-md-4">
+  <input id="textinput2" name="textinput5" type="text" placeholder="Enter your phone number" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput6">Email</label>  
+  <div class="col-md-4">
+  <input id="textinput2" name="textinput6" type="text" placeholder="Enter your email" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+
+
+<!-- Multiple Radios -->
+<!-- <div class="form-group">
   <label class="col-md-4 control-label" for="gender" >Gender</label>
   <div class="col-md-4">
   <div class="radio">
@@ -114,10 +159,10 @@
     </label>
 	</div>
   </div>
-</div>
+</div> -->
 
 <!-- Appended Input-->
-<div class="form-group">
+<!-- <div class="form-group">
   <label class="col-md-4 control-label" for="meds">Current Medications</label>
   <div class="col-md-4">
     <div class="input-group">
@@ -126,9 +171,10 @@
     </div>
     
   </div>
-</div>
+</div> -->
+
 <!-- Appended Input-->
-<div class="form-group">
+<!-- <div class="form-group">
   <label class="col-md-4 control-label" for="allergies">Allergies</label>
   <div class="col-md-4">
     <div class="input-group">
@@ -137,7 +183,7 @@
     </div>
     
   </div>
-</div>
+</div> -->
 <!-- Button -->
 <div class="form-group">
   <label class="col-md-4 control-label" for="create"></label>
