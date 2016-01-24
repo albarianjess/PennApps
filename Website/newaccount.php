@@ -81,9 +81,9 @@
   <label class="col-md-4 control-label" for="textinput2">Shelter Hours</label>  
   <div class="col-md-4">
   Open:
-  <input id="textinput2" name="textinput2" type="number" min="12" max="11" placeholder="am" class="form-control input-md" required="">
+  <input id="textinput2" name="textinput2" type="number" min="1" max="12" placeholder="am" class="form-control input-md" required="">
   Close:
-  <input id="textinput2" name="textinput22" type="number" min="12" max="11" placeholder="pm" class="form-control input-md" required="">
+  <input id="textinput2" name="textinput22" type="number" min="1" max="12" placeholder="pm" class="form-control input-md" required="">
   </div>
 </div>
 
