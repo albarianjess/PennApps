@@ -39,7 +39,7 @@
 
 <!-- Form Name -->
 <!--<legend>Update your information</legend>-->
-<h2 style="color: #fff; padding: 50px;"><strong>Create an account</strong></h2>
+<h2 style="color: #000; padding: 50px;"><strong>Create an account</strong></h2>
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinputID">Username</label>  
@@ -198,6 +198,7 @@
         
         
         <footer class="site-footer center-block">
+            <img src="/assets/img/title.png" style="width: 10%; height: 10%;"/><br>
             <a href='MAILTO:jessica.albarian@colorado.edu'>Contact us</a> | FAQ
         </footer>
 
