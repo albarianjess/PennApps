@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="babyllama.pennapps">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Main -->
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
+        <!-- Dog Activity -->
+        <activity
+            android:name=".DogActivity"
+            android:label="Adoptable Dogs"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+        <!-- Shelters Near You -->
+        <activity
+            android:name=".Main2Activity"
+            android:label="Animal Shelters Near You"
+            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+
+        <!-- android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"> -->
+        <!-- Splash Activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Boulder Humane Society Activity -->
+        <activity
+            android:name=".ShelterActivity"
+            android:label="Boulder Humane Society"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+
+
+        <!-- Longmont Humane Society -->
+        <activity android:name=".LongmontActivity"
+            android:label="Longmont Humane Society"
+            android:theme="@style/Theme.AppCompat.Light"/>
+
+
+
+        <!--Cat Activity-->
+        <activity android:name=".CatActivity"
+            android:label="Adoptable Cats"
+            android:theme="@style/Theme.AppCompat.Light" />
+
+
+        <!--Other Animals Activity-->
+        <activity android:name=".SmallActivity"
+            android:label="Adoptable Other Animals"
+            android:theme="@style/Theme.AppCompat.Light"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="babyllama.pennapps.MainActivity"
+    android:background="@drawable/grad">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:src="@drawable/titlew"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:text="Find A Shelter"
+        android:id="@+id/find"
+        android:onClick="findShelter"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Saving Homeless Animals"
+        android:id="@+id/textView"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_above="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="One Pet At A Time"
+        android:id="@+id/textView2"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/title"
+        android:layout_alignLeft="@+id/find"
+        android:layout_alignStart="@+id/find"
+        android:layout_marginBottom="46dp" />
+</RelativeLayout>
