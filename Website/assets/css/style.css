@@ -31,7 +31,8 @@ h3 {
     line-height: 30px;
 }
 
-img { max-width: 100%; }
+img { max-width: 100%; 
+		}
 
 ::-moz-selection { background: #de995e; color: #fff; text-shadow: none; }
 ::selection { background: #de995e; color: #fff; text-shadow: none; }
