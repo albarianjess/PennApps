@@ -39,7 +39,7 @@
 
 <!-- Form Name -->
 <!--<legend>Update your information</legend>-->
-<h2 style="color: #fff; padding: 50px;">Create an account</h2>
+<h2 style="color: #fff; padding: 50px;"><strong>Create an account</strong></h2>
 <!-- Text input-->
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinputID">Username</label>  
