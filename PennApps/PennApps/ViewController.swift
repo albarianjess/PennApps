@@ -17,6 +17,12 @@ class ViewController: UIViewController, UIScrollViewDelegate, NSURLConnectionDel
     @IBOutlet weak var scrollView: UIScrollView!
     lazy var data = NSMutableData()
     
+    @IBAction func callButton(sender: AnyObject) {
+        UIApplication.sharedApplication().openURL(NSURL(string: "tel://17206207466")!)
+        
+    }
+    
+
     
     //
     // Do any additional setup after loading the view, typically from a nib.
@@ -24,27 +30,35 @@ class ViewController: UIViewController, UIScrollViewDelegate, NSURLConnectionDel
     override func viewDidLoad() {
         super.viewDidLoad()
         // Create Image: works
-        let image = UIImage(named: "kitten1.png")!
-        imageView = UIImageView(image: image)
-
-        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
-        //scrollView.addSubview(imageView)
-        view.addSubview(imageView)
+//        let image = UIImage(named: "kitten1.png")!
+//        imageView = UIImageView(image: image)
+//
+//        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 100)
+//        //scrollView.addSubview(imageView)
+//        view.addSubview(imageView)
         //scrollView.contentSize = image.size
     }
     
-    func getData() {
-        let url = NSURL(string: "https://52.35.14.9")
-        let requestGet = NSMutableURLRequest(URL: url!)
-        var response: NSURLResponse?
-    
-        requestGet.HTTPMethod = "GET"
-        requestGet.addValue("application/json", forHTTPHeaderField: "Accept")
-    
-        NSURLConnection.sendAsynchronousRequest
-        (requestGet, queue: NSOperationQueue.mainQueue())
-            {(response, data, error) in print(NSString(data: data!, encoding: NSUTF8StringEncoding))
-    }
+//    func getData() {
+//        let url = NSURL(string: "https://52.35.14.9")
+//        let requestGet = NSMutableURLRequest(URL: url!)
+//        var response: NSURLResponse?
+//    
+//        requestGet.HTTPMethod = "GET"
+//        requestGet.addValue("application/json", forHTTPHeaderField: "Accept")
+//        
+//        NSURLConnection.sendAsynchronousRequest(requestGet, queue: NSOperationQueue.mainQueue()) { (response, NSData, NSError) -> Void in
+//            do {
+//
+//            }
+//        }
+//        
+//        
+//        
+//        NSURLConnection.sendAsynchronousRequest
+//        (requestGet, queue: NSOperationQueue.mainQueue())
+//        do {(response, data, error); in print(NSString(data: data!, encoding: NSUTF8StringEncoding, error:error))
+//    }
     
     
 
