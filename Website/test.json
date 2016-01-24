@@ -1,0 +1,13 @@
+{
+	"name": "Boulder Humane Society",
+	"address": "2525 55th Street",
+	"city": "Boulder",
+	"state": "CO",
+	"zipcode": "80301",
+
+	"phone": "720-620-7466",
+	"email": "spencer.hanson@colorado.edu",
+	"username": "test",
+	"password": "test",
+	"shelter_id": "1"
+}
