@@ -15,3 +15,5 @@ MongoDB.jar
 data.json
 test.json
 update.sh
+
+<img src="DesignStuff/final.jpg" />
