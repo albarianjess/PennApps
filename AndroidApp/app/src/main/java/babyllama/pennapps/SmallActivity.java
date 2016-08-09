@@ -23,7 +23,7 @@ public class SmallActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_small);
 
-        new URLDataDownloadSmall().execute("http://52.32.184.198/humanesociety/smalldata.json");
+        new URLDataDownloadSmall().execute("http://52.32.184.198/html/smalldata.json");
     }
 
     public class URLDataDownloadSmall extends URLDataDownload {

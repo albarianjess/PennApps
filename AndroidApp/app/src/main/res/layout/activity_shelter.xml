@@ -15,33 +15,28 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true">
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout3">
 
-        <!--<de.hdodenhof.circleimageview.CircleImageView-->
-            <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
-            <!--android:id="@+id/profilepic"-->
-            <!--android:layout_width="104dp"-->
-            <!--android:layout_height="104dp"-->
-            <!--android:src="@drawable/logo"-->
-            <!--app:civ_border_width="2dp"-->
-            <!--app:civ_border_color="#FF000000"/>-->
 
         <LinearLayout
             android:orientation="vertical"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:weightSum="1"
+
             android:id="@+id/header">
 
             <ImageView
-                android:layout_width="147dp"
-                android:layout_height="106dp"
+                android:layout_width="337dp"
+                android:layout_height="243dp"
                 android:id="@+id/imageView2"
-                android:src="@drawable/logo"
+                android:src="@drawable/pup"
                 android:adjustViewBounds="true"
+                android:layout_gravity="center_horizontal"
                 android:scaleType="centerCrop"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentRight="true"
@@ -50,8 +45,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Boulder Humane Society"
+                android:textColor="@color/colorWhite"
                 android:id="@+id/textView3" />
 
             <TextView
@@ -59,74 +56,80 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="2323 55th Street"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorWhite"
                 android:id="@+id/textView4" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:text="Boulder, CO 80301"
+                android:textColor="@color/colorWhite"
                 android:id="@+id/textView5" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="720-620-7466"
+                android:text="720-555-7466"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/colorWhite"
                 android:id="@+id/textView6" />
         </LinearLayout>
 
     </LinearLayout>
 
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/header"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/dog"
-            android:layout_width="104dp"
-            android:layout_height="104dp"
-            android:src="@drawable/pup"
-            app:civ_border_width="2dp"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:onClick="goToDogs"
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/linearLayout2"
+            android:layout_gravity="bottom"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/cat"
-            android:layout_width="104dp"
-            android:layout_height="104dp"
-            android:src="@drawable/kitten"
-            app:civ_border_width="2dp"
-            android:onClick="goToCats"
-            app:civ_border_color="#FF000000"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dogs"
+                android:onClick="goToDogs"
+                android:id="@+id/button3"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/colorBlack"
+                android:background="@color/colorWhite"
+                android:layout_above="@+id/button2"
+                android:layout_centerHorizontal="true" />
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/small"
-            android:layout_width="104dp"
-            android:layout_height="104dp"
-            android:src="@drawable/bunny"
-            android:onClick="goToSmall"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            app:civ_border_width="2dp"
-            app:civ_border_color="#FF000000"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
-    </LinearLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cats"
+                android:onClick="goToCats"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/colorBlack"
+                android:background="@color/colorWhite"
+                android:id="@+id/button2"
+                android:layout_above="@+id/button"
+                android:layout_alignLeft="@+id/button3"
+                android:layout_alignStart="@+id/button3" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Small Animals"
+                android:padding="10sp"
+                android:textColor="@color/colorBlack"
+                android:background="@color/colorWhite"
+                android:onClick="goToSmall"
+                android:id="@+id/button"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+
+
 
 </RelativeLayout>

@@ -27,7 +27,7 @@
             android:id="@+id/shelter1"
             android:layout_width="104dp"
             android:layout_height="104dp"
-            android:src="@drawable/logo"
+            android:src="@drawable/pup"
             android:onClick="goToShelter"
             app:civ_border_width="2dp"
             app:civ_border_color="#FF000000"/>
@@ -42,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Boulder Humane Society"
-                android:textColor="@color/colorBlack"
+                android:textColor="@color/colorWhite"
                 android:onClick="goToShelter"
                 android:id="@+id/textView7" />
 
@@ -51,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="2323 55th Street"
-                android:textColor="@color/colorBlack"
+                android:textColor="@color/colorWhite"
                 android:id="@+id/textView8" />
 
             <TextView
@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="Boulder, CO 80301"
-                android:textColor="@color/colorBlack"
+                android:textColor="@color/colorWhite"
                 android:id="@+id/textView9" />
 
             <TextView
@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="720-620-7466"
-                android:textColor="@color/colorBlack"
+                android:textColor="@color/colorWhite"
                 android:id="@+id/textView10" />
         </LinearLayout>
 
@@ -89,7 +89,7 @@
             android:id="@+id/shelter2"
             android:layout_width="104dp"
             android:layout_height="104dp"
-            android:src="@drawable/longmont"
+            android:src="@drawable/kitten"
             app:civ_border_width="2dp"
             android:onClick="goToLongmont"
             app:civ_border_color="#FF000000"
@@ -108,14 +108,14 @@
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="Longmont Humane Society"
                 android:id="@+id/textView11"
-                android:textColor="@color/colorBlack"
+                android:textColor="@color/colorWhite"
                 android:layout_alignTop="@+id/shelter2"
                 android:layout_toRightOf="@+id/shelter2"
                 android:layout_toEndOf="@+id/shelter2" />
 
             <TextView
                 android:layout_width="wrap_content"
-                android:textColor="@color/colorBlack"
+                android:textColor="@color/colorWhite"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="9595 Nelson Rd"
@@ -124,7 +124,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/colorBlack"
+                android:textColor="@color/colorWhite"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="Longmont, CO 80501"
                 android:id="@+id/textView13" />
@@ -134,10 +134,19 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceSmall"
                 android:text="720-620-7466"
-                android:textColor="@color/colorBlack"
+                android:textColor="@color/colorWhite"
                 android:id="@+id/textView14" />
         </LinearLayout>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView15"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

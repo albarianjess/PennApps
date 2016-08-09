@@ -24,7 +24,7 @@ public class DogActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dog);
 
-        new URLDataDownloadDogs().execute("http://52.32.184.198/humanesociety/dogdata.json");
+        new URLDataDownloadDogs().execute("http://52.32.184.198/html/dogdata.json");
     }
 
 

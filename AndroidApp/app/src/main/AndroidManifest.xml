@@ -26,7 +26,7 @@
         <activity
             android:name=".Main2Activity"
             android:label="Animal Shelters Near You"
-            android:theme="@style/Theme.AppCompat.Light.DarkActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
         <!-- android:theme="@android:style/Theme.DeviceDefault.Light.NoActionBar"> -->
         <!-- Splash Activity -->
@@ -44,7 +44,7 @@
         <activity
             android:name=".ShelterActivity"
             android:label="Boulder Humane Society"
-            android:theme="@style/Theme.AppCompat.Light" />
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
 
 
 

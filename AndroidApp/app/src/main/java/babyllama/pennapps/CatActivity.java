@@ -23,7 +23,7 @@ public class CatActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cat);
 
-        new URLDataDownloadCats().execute("http://52.32.184.198/humanesociety/catdata.json");
+        new URLDataDownloadCats().execute("http://52.32.184.198/html/catdata.json");
     }
 
     public class URLDataDownloadCats extends URLDataDownload {
