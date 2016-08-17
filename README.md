@@ -2,6 +2,6 @@
 Our hack for PennApps 2016
 
 
-![proposal](https://github.com/jessalbarian/PennApps/blob/master/proposal.pdf)
+![screen shot](https://github.com/jessalbarian/PennApps/blob/master/screenshot.png)
 
 <img src="DesignStuff/final.jpg" />
